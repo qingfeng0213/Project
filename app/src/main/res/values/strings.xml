@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Small_Project</string>
+
+
+    <string name="login_name">15321309175</string>
+    <string name="login">登录</string>
+    <string name="resgin">快速注册</string>
+    <string name="zccg">注册成功</string>
+    <string name="title_activity_add_ress">AddRessActivity</string>
+</resources>

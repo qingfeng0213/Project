@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/back_home"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginTop="40px"
+        android:src="@drawable/common_nav_btn_back_n"
+        />
+    <com.recker.flybanner.FlyBanner
+        android:id="@+id/detailsfly"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></com.recker.flybanner.FlyBanner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/qian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="166"
+            android:textSize="20sp"
+            android:textColor="#ff000d"
+            />
+
+        <TextView
+            android:id="@+id/sold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:text="已售166件" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/particulars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="商品具体的介绍"
+        />
+    <TextView
+        android:id="@+id/myshang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="商品详情"
+        android:textSize="25dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></WebView>
+
+        <ImageView
+            android:id="@+id/add_car"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/common_btn_add_n" />
+        <ImageView
+            android:id="@+id/add_buy"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/common_btn_buy_n" />
+
+    </RelativeLayout>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/beijing"
+    android:padding="36dp"
+    tools:context=".reg.RegActivity">
+    <EditText
+        android:id="@+id/login_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="160dp"
+        android:drawableLeft="@drawable/login_icon_phone_n_hdpi"
+        />
+    <EditText
+        android:id="@+id/login_pswd_et"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:drawablePadding="20dp"
+        android:inputType="numberPassword"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/login_icon_lock_n_hdpi"
+        />
+    <TextView
+        android:id="@+id/fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="已有账户?立即登录"
+        android:gravity="right"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/login_rebt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:text="@string/zccg" />
+
+</com.zhy.autolayout.AutoLinearLayout>

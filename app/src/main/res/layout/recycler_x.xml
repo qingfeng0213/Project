@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="品质生活"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#e60a2b"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/pzsh"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lastrecy"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_margin="10dp"></android.support.v7.widget.RecyclerView>
+</com.zhy.autolayout.AutoLinearLayout>

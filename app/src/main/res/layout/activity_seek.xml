@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SeekActivity">
+
+    <com.example.small_project.MyView.CustomSearchView
+        android:id="@+id/myedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:edit_search_hint="请输入搜索的商品"
+        android:gravity="center"
+        app:right_button_text="搜索"
+        app:left_img_src="@drawable/common_nav_btn_menu_n"></com.example.small_project.MyView.CustomSearchView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索历史"
+        />
+    <com.example.small_project.MyView.XCFlowLayout
+        android:id="@+id/flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.small_project.MyView.XCFlowLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xrecyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.jcodecraeer.xrecyclerview.XRecyclerView>
+    <LinearLayout
+        android:id="@+id/errorSerch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无搜索内容"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:id="@+id/wusou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wusou"
+            />
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

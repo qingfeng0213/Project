@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.small_project.MyView.CustomSearchView
+        android:id="@+id/myedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:edit_search_hint="请输入搜索的商品"
+        android:gravity="center"
+        app:right_button_text="搜索"
+        app:left_img_src="@drawable/common_nav_btn_menu_n"></com.example.small_project.MyView.CustomSearchView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</com.zhy.autolayout.AutoLinearLayout>
